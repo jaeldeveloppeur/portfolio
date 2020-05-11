@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--https://watson-vcard.netlify.app/index-light.html#home-->
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Jaël PATI Developpeur Web Front End</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+<!--        fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <script src="https://kit.fontawesome.com/e069b95648.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        
+        <section id="chargement">
+            <span class="loader loaderQuart">
+            </span>
+            Chargement ...
+        </section>
+        
+        <div id="container">
+            <header id="header" class="header-main">
+                <div>
+                    <img src="img/Jael%20PATI.png">
+                    <nav>
+                        <div class="divNav"><a href="#"><span class="navMenuIcon"><i class="lnr lnr-home"></i></span>Accueil</a></div>
+                        <div class="divNav"><a href="#"><span class="navMenuIcon"><i class="lnr lnr-user"></i></span>À propos de moi</a></div>
+                        <div class="divNav"><a href="#"><span class="navMenuIcon"><i class="lnr lnr-license"></i></span>Compétences</a></div>
+                        <div class="divNav"><a href="#"><span class="navMenuIcon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></div>
+                        <div class="divNav"><a href="#"><span class="navMenuIcon"><i class="lnr lnr-book"></i></span>Blog</a></div>
+                        <div class="divNav"><a href="#"><span class="navMenuIcon"><i class="lnr lnr-envelope"></i></span>Contact</a></div>
+                    </nav>
+                </div>
+
+                <div class="footerNav">
+                    <div class="lienReseaux">
+                        <a href="https://github.com/jaeldeveloppeur" id="gitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ja%C3%ABl-pati-8322a514a/" id="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p>2020 © jael-developpeur.fr</p>
+                </div>
+            </header>
+
+            <section id="headerResponsive">
+                <p></p>
+                <a href="#" id="navResponsive" onclick="ouvrirNav()">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a>
+            </section>
+
+            <div class="site">
+                <section id="accueil">
+                    <h1>Jaël <span id="name">Pati</span></h1>
+                    <p>Je suis <span id="spanDev"></span></p>
+                    <p id="test"> Je remet à jour mon site<br> Rendez-vous sur mon
+                        <a href="https://github.com/jaeldeveloppeur" id="gitHub"><i class="fab fa-github"></i></a> et mon
+                        <a href="https://www.linkedin.com/in/ja%C3%ABl-pati-8322a514a/" id="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </p>
+                    <a href="document/developpeur-FRONT-REACT-0520.pdf" class="cv">Mon cv c'est par ici</a>
+                </section>
+            </div>
+            
+        </div>
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#chargement").fadeOut(1000, function(){
+                    $("#container").fadeIn(500);
+                });
+            })
+        </script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
